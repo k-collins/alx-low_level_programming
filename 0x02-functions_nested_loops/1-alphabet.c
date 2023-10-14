@@ -1,7 +1,5 @@
 #include "main.h"
 
-void print_alphabet(void);
-
 /**
  * print_alphabe - it prints alphabeth
  *
