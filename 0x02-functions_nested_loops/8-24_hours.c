@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *jack_bauer- Function to every minutes 
+ *jack_bauer- Function to every minutes
  */
 
 void jack_bauer(void)
