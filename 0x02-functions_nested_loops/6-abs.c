@@ -3,20 +3,20 @@
 /**
  * _abs - function for absolute
  *
- * @mumber: the number to be checked
+ * @number: the number to be checked
  *
  * Return: to return the value
  *
  */
 
-int _abs(int number);
+int _abs(int number)
 {
 	if (number < 0)
 	{
-		return -number;
+		return (-number);
 	}
-	else 
+	else
 	{
-		return number;
+		return (number);
 	}
 }
