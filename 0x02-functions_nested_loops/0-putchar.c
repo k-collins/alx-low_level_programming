@@ -5,10 +5,10 @@ int main(void)
         char putchars[] = "_putchar";
         char length = strlen(putchars);
 
-        char i = '0';
+        char i;
 
 
-        for (i; i < length; i++)
+        for (i = 0; i < length; i++)
         {
                 putchar(putchars[i]);
         }
