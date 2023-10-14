@@ -7,11 +7,15 @@
  *
  */
 
-int _islower(int c)
+int _islower(int alphabeth)
 {
-	if (c >= 'a' && c <= 'z')
+	if (alphabeth >= 'a' && alphabeth <= 'z')
 	{
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
