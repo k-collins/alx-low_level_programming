@@ -6,3 +6,4 @@ void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int alphabeth);
 int _isalpha(int ifAlphabeth);
+int print_sign(int n);
