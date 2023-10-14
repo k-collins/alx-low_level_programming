@@ -3,9 +3,9 @@
 int main(void)
 {
         char putchars[] = "_putchar";
-        char length = strlen(putchars);
+        int length = strlen(putchars);
 
-        char i;
+        int i;
 
 
         for (i = 0; i < length; i++)
