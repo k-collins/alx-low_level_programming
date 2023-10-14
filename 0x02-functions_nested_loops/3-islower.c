@@ -17,5 +17,5 @@ int _islower(int alphabeth)
 	{
 		return (0);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
