@@ -2,8 +2,9 @@
 /**
  * _islower - function to check lower case
  *
- * 
- * Return 1 if true, else 0 
+ * @alphabeth: alphabeth to check
+ *
+ * Return: 1 if true, else 0
  *
  */
 
