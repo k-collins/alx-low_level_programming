@@ -5,13 +5,16 @@
  *
  * This will prints the first 98 Fibonacci numbers
  * 
- * Return: this will return 0
+ * Return: this will return nothing
  */
 
 int main(void)
 {
 	int loop = 2;
-	float i = 1, j = i + 1, k = i + j;
+
+	float i = 1;
+	float j = i + 1;
+	float k = i + j;
 
 	printf("%.0f, ", i);
 	printf("%.0f, ", j);
