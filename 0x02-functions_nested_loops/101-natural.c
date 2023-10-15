@@ -4,7 +4,7 @@
  * main - printinng the total of all multiples of 3,5 below 1024
  *
  * Return: terminate and return 0
- * 
+ *
  */
 
 int main(void)
