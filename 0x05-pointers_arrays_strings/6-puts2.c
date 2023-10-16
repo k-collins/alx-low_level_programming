@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "2-strlen.c"
 /**
- * puts2 - it will put string 
+ * puts2 - it will put string
  *
  * @s: string to put
  */
