@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "2-strlen.b"
+#include "2-strlen.c"
 
 /**
  * _atoi - ()will onverts string to integer
