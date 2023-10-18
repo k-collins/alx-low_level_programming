@@ -7,24 +7,23 @@
  * Return: returns integer value
  */
 
-int _atoi(char *var)
+int _atoi(char *val)
 {
-	int negsum = 1;
-	unsigned int number = 0;
-	char *str = var;
+	int sign = 1;
+	unsigned int num = 0;
+	char *temp = val;
 
-	while (*str != '\0' && (*str < '0' || *str > '9'))
+	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
 	{
-		if (*str == '-')
-			negsum *= -1;
-		str++;
+		if (*temp == '-')
+			sign *= -1;
+		temp++;
 	}
-	if (*str != '\0')
+	if (*temp != '\0')
 	{
 		do {
-			number = number * 10 + (*str - '0');
-			str++;
-		} while (*str >= '0' && *str <= '9');
+			num = num * 10 + (*temp - '0');
+			temp++;
+		} while (*temp >= '0' && *temp <= '9');
 	}
-	return (number * negsum);
-}
+	return (num * sign);
