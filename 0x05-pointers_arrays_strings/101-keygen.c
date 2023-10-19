@@ -1,28 +1,28 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
-* main - () program WILL generates random valid
-* FOR PROGRAM CRACKME
+* main - a program that generates random valid
+* passwords for the program 101-crackme
 *
-* Return: 0 (Success)
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-	int passkey[70], i, total = 0, n;
+	int password[70], counter, sum = 0, n;
 
 	srand(time(NULL));
 
-	for (i = 0; i < 70; i++)
+	for (counter = 0; counter < 70; counter++)
 	{
-		passkey[i] = rand() % 78;
-		total += (passkey[i] + '0');
-		putchar(passkey[i] + '0');
-		if ((2772 - total) - '0' < 78)
+		password[counter] = rand() % 78;
+		sum += (password[counter] + '0');
+		putchar(password[counter] + '0');
+		if ((2772 - sum) - '0' < 78)
 		{
-			n = 2772 - total - '0';
-			total += n;
+			n = 2772 - sum - '0';
+			sum += n;
 			putchar(n + '0');
 			printf("\n");
 			break;
