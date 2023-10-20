@@ -1,6 +1,8 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
+#include <stdio.h>
+
 char *cap_string(char *);
 
 char *leet(char *);
@@ -15,7 +17,7 @@ void print_buffer(char *b, int size);
 
 int _putchar(char character);
 
-char *_strcat(char *str1, char *str2);
+char *_strcat(char *str1, char *str2)
 
 char *_strncat(char *dest, char *src, int n);
 
