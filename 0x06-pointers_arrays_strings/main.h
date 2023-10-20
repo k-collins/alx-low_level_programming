@@ -15,7 +15,7 @@ void print_buffer(char *b, int size);
 
 int _putchar(char character);
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *str1, char *str2);
 
 char *_strncat(char *dest, char *src, int n);
 
