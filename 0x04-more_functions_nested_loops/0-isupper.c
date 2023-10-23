@@ -4,7 +4,7 @@
 /**
  * _isupper - a function that checks for uppercase character.
  *
- * @c - The parameter to check
+ * @c: The parameter to check
  *
  * Return: Returns 1 is uppercase, 0 if otherwise
  *
