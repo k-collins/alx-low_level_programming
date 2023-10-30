@@ -6,10 +6,11 @@ int main(void)
     float second = 1; 
     float next;
     int n = 98;
+    int i;
 
     printf("%.0f, %.0f, ", first, second); 
 
-    for (int i = 2; i < n; i++) {
+    for (i = 2; i < n; i++) {
         next = first + second;
         printf("%.0f", next);
 
