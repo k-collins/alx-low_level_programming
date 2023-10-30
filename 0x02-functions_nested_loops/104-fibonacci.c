@@ -1,16 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - main function
+ * main - entry point
  *
- * Return: nothing
+ * program that finds and prints the first 98 Fibonacci numbers
+ *
+ * starting with 1 and 2, followed by a new line.
+ *
+ * Return: returns 0
  */
+
 int main(void)
 {
 	int counter = 2;
-
-	float a = 1;
-	float b = a + 1;
-	float c = a + b;
+	float a = 1, b = a + 1, c = a + b;
 
 	printf("%.0f, ", a);
 	printf("%.0f, ", b);
