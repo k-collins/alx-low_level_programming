@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-void printFibonacci(int n) {
+int main(void)
+{
     unsigned long long int first = 0; // First Fibonacci number
     unsigned long long int second = 1; // Second Fibonacci number
     unsigned long long int next; // To store the next Fibonacci number
+    int n = 98;
 
     printf("%llu, %llu, ", first, second); // Print the first two numbers
 
@@ -19,11 +21,4 @@ void printFibonacci(int n) {
         second = next;
     }
     printf("\n");
-}
-
-int main() {
-    // Print the first 98 numbers of the Fibonacci sequence
-    printFibonacci(98);
-
-    return 0;
 }
