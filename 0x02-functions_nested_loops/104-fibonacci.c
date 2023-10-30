@@ -1,26 +1,31 @@
 #include <stdio.h>
-
+/**
+ * main - main function
+ *
+ * Return: nothing
+ */
 int main(void)
 {
-    float first = 0;
-    float second = 1; 
-    float next;
-    int n = 98;
-    int i;
+	int counter = 2;
 
-    printf("%.0f, %.0f, ", first, second); 
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
 
-    for (i = 2; i < n; i++) {
-        next = first + second;
-        printf("%.0f", next);
-
-        if (i != n - 1) {
-            printf(", "); 
-        }
-
-        first = second;
-        second = next;
-    }
-    printf("\n");
-    return 0;
+	printf("%.0f, ", a);
+	printf("%.0f, ", b);
+	while (counter < 98)
+	{
+		counter++;
+		printf("%.0f", c);
+		a = b;
+		b = c;
+		c = a + b;
+		if (counter < 98)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+	return (0);
 }
