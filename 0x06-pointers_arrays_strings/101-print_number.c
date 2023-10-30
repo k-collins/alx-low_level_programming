@@ -12,13 +12,13 @@ unsigned int tens, digit, positive = n;
 double start = 1;
 
 if (n == 0)
-	_putchar('0');
+	putchar('0');
 else
 {
 	if (n < 0)
 	{
 	positive = n * -1;
-	_putchar('-');
+	putchar('-');
 	}
 
 	while (start <= positive)
@@ -31,7 +31,7 @@ else
 	while (tens >= 1)
 	{
 	digit = positive / tens;
-	_putchar(digit + '0');
+	putchar(digit + '0');
 	positive = (positive - (tens * digit));
 	tens /= 10;
 	}
