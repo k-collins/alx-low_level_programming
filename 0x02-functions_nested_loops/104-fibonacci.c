@@ -1,35 +1,29 @@
 #include <stdio.h>
 
-/**
- * main - main execution code
- *
- * This will prints the first 98 Fibonacci numbers
- * 
- * Return: this will return nothing
- */
+void printFibonacci(int n) {
+    unsigned long long int first = 0; // First Fibonacci number
+    unsigned long long int second = 1; // Second Fibonacci number
+    unsigned long long int next; // To store the next Fibonacci number
 
-int main(void)
-{
-	int loop = 2;
+    printf("%llu, %llu, ", first, second); // Print the first two numbers
 
-	float i = 1;
-	float j = i + 1;
-	float k = i + j;
+    for (int i = 2; i < n; i++) {
+        next = first + second;
+        printf("%llu", next);
 
-	printf("%.0f, ", i);
-	printf("%.0f, ", j);
-	while (loop < 98)
-	{
-		loop++;
-		printf("%.0f", k);
-		i = j;
-		j = k;
-		k = i + j;
-		if (loop < 98)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
-	return (0);
+        if (i != n - 1) {
+            printf(", "); // Print comma and space except for the last number
+        }
+
+        first = second;
+        second = next;
+    }
+    printf("\n");
+}
+
+int main() {
+    // Print the first 98 numbers of the Fibonacci sequence
+    printFibonacci(98);
+
+    return 0;
 }
