@@ -1,39 +1,39 @@
 #include "main.h"
 
 /**
-* print_number - this function will prints an integer
-* @n: the number to be printed
+* print_number - a function that prints an integer
+* @n: number to be printed
 */
 
 void print_number(int n)
 {
-unsigned int tenth, value, positive = n;
+unsigned int tens, digit, positive = n;
 
-double begin = 1;
+double start = 1;
 
 if (n == 0)
-	putchar('0');
+	_putchar('0');
 else
 {
 	if (n < 0)
 	{
 	positive = n * -1;
-	putchar('-');
+	_putchar('-');
 	}
 
-	while (begin <= positive)
+	while (start <= positive)
 	{
-	begin *= 10;
+	start *= 10;
 	}
 
-	tenth = begin / 10;
+	tens = start / 10;
 
-	while (tenth >= 1)
+	while (tens >= 1)
 	{
-	value = positive / tenth;
-	putchar(value + '0');
-	positive = (positive - (tenth * value));
-	tenth /= 10;
+	digit = positive / tens;
+	_putchar(digit + '0');
+	positive = (positive - (tens * digit));
+	tens /= 10;
 	}
 }
 }
